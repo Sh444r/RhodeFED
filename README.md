@@ -116,9 +116,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Beginnen met de volledige HTML en daarna de rest stap voor stap toevoegen.
+  - Feedback: breakdown aanpassen
+  - Positieve feedback: al goed op weg, HTML-uitwerking duidelijk.
   - ...
 
 </details>
@@ -244,8 +244,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron 1 https://w3schools.invisionzone.com/topic/61630-w3css-replace-text-on-hover/
+  2. bron 2 https://codepen.io/Jintos/pen/jOVaOZ?editors=1100
+  3. bron 3 https://codepen.io/shooft/pen/QwjQGZe
+  
 
 </details>
