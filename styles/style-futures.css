@@ -1,0 +1,525 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+	box-sizing:border-box;  
+  }
+  
+  *, *::before, *::after {
+	box-sizing: border-box;
+  }
+  
+  
+  :root {
+	  --maxWidth:32rem;
+  }
+  
+  body {
+	  grid-template-columns: minmax(auto, var(--maxWidth));
+	  justify-content:center;
+  }
+  
+  
+  
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+	  /* startje */
+	  --color-text:#111;
+	  --color-background:#eee;
+  }
+  
+  
+  
+  
+  
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  
+  /* jouw code */
+  
+  body {
+	background-color: white;
+	color: #595752;
+  }
+  
+  @font-face {
+	  font-family: "rhodefont";
+	  font-weight: bold;
+	  src: url('../fonts/NNRektoratWeb-Heavy1.woff2');
+  }
+  
+  @font-face {
+	font-family: "rhodefont";
+	font-weight: normal;
+	src: url('../fonts/testfont1.woff2');
+  }
+  
+  @font-face {
+	font-family: "rhodefont";
+	font-weight: thin;
+	src: url('../fonts/testfont2.woff2');
+  }
+  
+  h2 {
+	font-family: "rhodefont";
+	font-weight: bold;
+  }
+  
+  
+  /* voorbeeldjes van bold en normal, copy paste dit per element */
+  h3 {
+	font-family: "rhodefont";
+	font-weight: bold;
+  }
+  
+  h4 {
+	font-family: "rhodefont";
+	font-weight: bold;
+  }
+  
+  p {
+	font-family: "rhodefont";
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.6;
+  }
+  
+  a {
+	font-family: "rhodefont";
+	font-weight: normal;
+  }
+
+  
+
+
+
+  /* WAAR HEADER STYLING BEGINT */
+  
+nav {
+    position: relative;
+    background: #F1F0EC;
+    height: 80px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 1em;
+    padding: 0 20px;
+}
+
+
+nav h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: "rhodefont";
+    font-weight: bold;
+    color: #595752;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+/* HAMBURGER MENU LOGO LINKS UITGELIJND */
+.checkbtn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn img {
+    max-width: 1em;
+}
+
+#check {
+    display: none;
+}
+
+/* DESKTOP MENU // DIT LATER VERANDEREN EN EVT WEGHALEN*/
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color: #A6A6A6;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background: white;
+    transition: 0.5s;
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .header-ul {
+        position: fixed;
+        top: 80px;
+        left: -100%; 
+		width: calc(100% - 40px); 
+		margin: 0 20px;        
+        height: auto;
+        background: #F1F0EC;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        transition: left 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+        overflow-y: auto;
+        border-radius: 1em;
+    }
+
+    #check:checked ~ .header-ul {
+        left: 0;
+        opacity: 1;
+    }
+
+    .header-ul .menu-top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .header-ul .menu-top input[type="text"] {
+        flex: 1;
+        padding: 10px 15px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+    }
+
+    .header-ul .menu-top .cart {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .header-ul li {
+        display: block;
+	}
+
+	/* STYLING VOOR BODY.MENU-OPEN // dit werkt nog niet*/
+	body.menu-open {
+		overflow: hidden; 
+		height: 100vh;    
+	  }
+	  
+
+}
+  /* EINDE VAN HEADER STYLING */
+
+  /* BEGIN STYLING VAN NORMALE SECTION */
+  
+  section {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 1em;
+	padding-bottom: 0px;
+	background-color: #F1F0EC;
+
+  }
+  
+  section img {
+	border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+	order: 1;
+  }
+  
+  section h2 {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 0px 15px;
+	margin-bottom: 0px;
+	order: 2;
+  }
+  
+  section p {
+	padding: 0px 15px 0px;
+	order: 3;
+  }
+  
+  section a {
+    display: inline-block;
+    text-decoration: none;
+	align-items: start;
+	text-align: center;
+	border: .25px solid black;
+	border-radius: 20px;
+	margin-top: 0px;
+	margin-bottom: 1.5em;
+    margin-left: 5em;
+    margin-right: 5em;
+	padding: 5px;
+	color: #595752;
+	order: 4;
+  }
+  
+  a:hover {
+	background-color: white;
+  }
+
+  /* EINDE SECTION STYLING */
+
+
+  /* BEGIN DIV STYLING 'our ongoing partners' */
+
+  div h2 {
+    align-items: center;
+    margin-left: 1.5em;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+
+    /* EINDE DIV STYLING 'our ongoing partners' */
+
+ /* BEGIN STYLING VAN SECTION3 */
+  
+ section:nth-of-type(3) {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 1em;
+	padding-bottom: 0px;
+	background-color: #F1F0EC;
+
+  }
+  
+  section:nth-of-type(3) h2 {
+    font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+    margin-top: 2em;
+	margin-bottom: 0px;
+    text-align: center;
+	order: 1;
+  }
+  
+  section:nth-of-type(3) p {
+	padding: 0px 15px 0px;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 400;
+	order: 2;
+  }
+
+  section:nth-of-type(3) a {
+    display: inline-block;
+	align-items: start;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+	padding: 5px;
+	color: #595752;
+	order: 3;
+  }
+  
+  section:nth-of-type(3) :hover {
+	background-color: white;
+  }
+
+/* EINDE SECTION3 STYLING */
+
+
+
+ /* BEGIN STYLING VAN SECTION5 */
+  
+ section:nth-of-type(5) {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 1em;
+	padding-bottom: 0px;
+	background-color: #F1F0EC;
+
+  }
+  
+  section:nth-of-type(5) h2 {
+    font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	/* padding: 0px 15px; */
+    margin-top: 3em;
+	margin-bottom: 0px;
+    text-align: center;
+	order: 1;
+  }
+  
+  section:nth-of-type(5) p {
+	padding: 0px 15px 0px;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 400;
+	order: 2;
+  }
+
+  section:nth-of-type(5) a {
+    display: inline-block;
+    /* text-decoration: none; */
+	align-items: start;
+	text-align: center;
+	/* border: .25px solid black;
+	border-radius: 20px; */
+	margin-top: 0px;
+	margin-bottom: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+	padding: 5px;
+	color: #595752;
+	order: 3;
+  }
+  
+  section:nth-of-type(5) :hover {
+	background-color: white;
+  }
+
+  /* EINDE SECTION5 STYLING */
+
+
+ /* BEGIN STYLING VAN SECTION7 */
+  
+ section:nth-of-type(7) {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 1em;
+	padding-bottom: 0px;
+	background-color: #F1F0EC;
+
+  }
+  
+  section:nth-of-type(7) h2 {
+    font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	/* padding: 0px 15px; */
+    margin-top: 2em;
+	margin-bottom: 0px;
+    text-align: center;
+	order: 1;
+  }
+  
+  section:nth-of-type(7) p {
+	padding: 0px 15px 0px;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 400;
+	order: 2;
+  }
+
+  section:nth-of-type(7) a {
+    display: inline-block;
+    /* text-decoration: none; */
+	align-items: start;
+	text-align: center;
+	/* border: .25px solid black;
+	border-radius: 20px; */
+	margin-top: 0px;
+	margin-bottom: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+	padding: 5px;
+	color: #595752;
+	order: 3;
+  }
+  
+  section:nth-of-type(7) :hover {
+	background-color: white;
+  }
+
+  /* EINDE SECTION7 STYLING */
+
+
+ /* BEGIN STYLING VAN SECTION9 */
+  
+  section:nth-of-type(9) {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 1em;
+	padding-bottom: 0px;
+	background-color: #F1F0EC;
+
+  }
+  
+  section:nth-of-type(9) h2 {
+    font-family: sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	/* padding: 0px 15px; */
+    margin-top: 3em;
+	margin-bottom: 0px;
+    text-align: center;
+	order: 1;
+  }
+  
+  section:nth-of-type(9) p {
+	padding: 0px 15px 0px;
+	order: 2;
+  }
+
+  section:nth-of-type(9) a {
+    display: inline-block;
+    /* text-decoration: none; */
+	align-items: start;
+	text-align: center;
+	/* border: .25px solid black;
+	border-radius: 20px; */
+	margin-top: 0px;
+	margin-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+	padding: 5px;
+	color: #595752;
+	order: 3;
+  }
+  
+  section:nth-of-type(9) :hover {
+	background-color: white;
+  }
+
+  /* EINDE SECTION STYLING */
+
+

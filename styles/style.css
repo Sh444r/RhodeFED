@@ -417,7 +417,7 @@ section:nth-of-type(2) > div:nth-of-type(1) > ul:nth-of-type(1) > li > a {
     justify-content: center;
     white-space: nowrap;
     max-width: 100%;
-    background-color: #f9f9f9;
+    background-color: #F1F0EC;
     border: 1px solid #333;
     color: #333;
     text-decoration: none;
@@ -426,6 +426,7 @@ section:nth-of-type(2) > div:nth-of-type(1) > ul:nth-of-type(1) > li > a {
     font-size: 16px;
     transition: background-color 0.3s;
     margin: 0 auto 0 auto;
+	margin-bottom: 0.5em;
 }
 
 section:nth-of-type(2) > div:nth-of-type(1) > ul:nth-of-type(1) > li > a:hover {
@@ -459,108 +460,6 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
   /* EINDE STYLING */
   
   
-  /*  BEGIN CAROUSEL2 STYLING */
-  
-  .carousel2-container {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	/* align-items: center; */
-	margin: 0 auto;
-	max-width: 100%;
-  }
-  
-  .carousel2 {
-	display: flex;
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
-  }
-  
-  .carousel2-items {
-	display: flex;
-	/* gap: 20px; */
-  }
-  
-  .carousel2-items li {
-	width: 200px;
-	list-style: none;
-	border-radius: 10px;
-	background-color: #fff;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-  }
-  
-  .carousel2-items li img {
-	width: 100%;
-	height: auto;
-	border-bottom: 2px solid #f4f4f4;
-	order: 1;
-  }
-  
-  .carousel2-items li h3 {
-	margin-top: 20px;
-	font-size: 20px;
-	font-weight: bold;
-	color: #333;
-	order: 2;
-  }
-  
-  .carousel2-items li h4 {
-	font-size: 18px;
-	color: #666;
-	margin: 10px 0;
-	order: 3;
-  }
-  
-  .carousel2-items li p {
-	font-size: 16px;
-	color: #777;
-	margin-bottom: 20px;
-  }
-  
-  .carousel2-items li a {
-	font-size: 16px;
-	color: #333;
-	text-decoration: none;
-	background-color: #f5f5f5;
-	padding: 10px;
-	border-radius: 20px;
-	transition: background-color 0.3s ease;
-  }
-  
-  .carousel2-items li a:hover {
-	background-color: #e0e0e0;
-  }
-  
-  .carousel12-dots {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-  }
-  
-  .carousel2-dots button {
-	font-size: 0px;
-	background: none;
-	border: 2px solid #ccc;
-	padding: 8px 16px;
-	margin: 0 5px;
-	font-size: 14px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-	border-radius: 50%;
-  }
-  
-  .carousel2-dots button.active {
-	background-color: #f0f0f0;
-  }
-  
-  .carousel2-dots button:hover {
-	background-color: #e0e0e0;
-  }
-  
-  
-  /* EINDE CAROUSEL2 STYLING  */
   
   
   /* BEGIN VISUALLY HIDDEN H2 STLYING */
@@ -635,7 +534,7 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
   }
   
   
- /* !!!NIEUWE CODE VOOR 4E SECTION!!!! DE 2E CAROUSEL */
+ /* !!! CODE VOOR 4E SECTION!!!! DE 2E CAROUSEL */
 
 	section:nth-of-type(4) {
 	display: grid;
@@ -710,9 +609,10 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
 	section:nth-of-type(4) > ul > li a {
 	margin-top: 15px;
 	margin-left: 10px;
-	padding: 5px 25px;
+	margin-bottom: 0px;
+	padding: 5px 20px;
 	text-decoration: none;
-	background-color: #f5f5f5;
+	background-color: #F1F0EC;
 	border-radius: 20px;
 	color: #333;
 	}
@@ -722,7 +622,7 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
 	display: flex;
 	justify-content: center;     
 	align-items: center;  
-	margin-top: -40px;           
+	margin-top: -21.5rem;           
 	gap: 10px;
 	z-index: 20;            
 	position: relative;
@@ -731,8 +631,8 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
 	section:nth-of-type(4) > div > button {
 	font-size: 0; 
 	background: none;
-	border: 2px solid #ccc;
-	padding: 8px;
+	border: 1px solid #F1F0EC;
+	padding: 4px;
 	border-radius: 50%;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
@@ -795,7 +695,7 @@ section:nth-of-type(5) a {
 	margin-left: 10px;
 	margin-right: 150px;
 	margin-top: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 1.5em;
 	padding: 5px 10px;
 	color: #595752;
 	order: 4;
@@ -828,6 +728,7 @@ section:nth-of-type(6) a {
 	margin-left: 5em;
 	margin-right: 5em;
 	margin-bottom: 1.5em;
+	text-decoration: none;
 }
 
 section:nth-of-type(6) ul {
@@ -1022,4 +923,3 @@ section:nth-of-type(7) > div:first-of-type {
 
 
   /* BEGIN FOOTER STYLING */
-

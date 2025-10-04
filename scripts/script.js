@@ -29,25 +29,3 @@ secondButtons.forEach((btn, index) => {
 });
 
 
-// CODE CAROUSEL3 - SECTION6
-
-const thirdSection = document.querySelector("section:nth-of-type(6)");
-const thirdItems = thirdSection.querySelectorAll("ul > li");
-const [prevBtn, nextBtn] = thirdSection.querySelectorAll("div > button");
-
-let currentIndex = 0;
-
-function scrollToItem(index) {
-  if (index < 0) index = 0;
-  if (index >= thirdItems.length) index = thirdItems.length - 1;
-  currentIndex = index;
-  thirdItems[currentIndex].scrollIntoView({ behavior: "smooth", inline: "start" });
-}
-
-prevBtn.addEventListener("click", () => scrollToItem(currentIndex - 1));
-nextBtn.addEventListener("click", () => scrollToItem(currentIndex + 1));
-
-scrollToItem(0);
-
-
-
