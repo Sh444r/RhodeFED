@@ -139,6 +139,8 @@ nav a {
 }
 
 .checkbtn img {
+	margin-left: -7.75em;
+	margin-bottom: 0.5em;
     max-width: 1em;
 }
 
@@ -170,68 +172,99 @@ a:hover, a:active {
     transition: 0.5s;
 }
 
+/* --- MOBILE HEADER FIXES --- */
 @media (max-width: 858px) {
-    .checkbtn {
-        display: block;
-    }
-
-    .header-ul {
-        position: fixed;
-        top: 80px;
-        left: -100%; 
-		width: calc(100% - 40px); 
-		margin: 0 20px;        
-        height: auto;
-        background: #F1F0EC;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        transition: left 0.3s ease, opacity 0.3s ease;
-        opacity: 0;
-        overflow-y: auto;
-        border-radius: 1em;
-    }
-
-    #check:checked ~ .header-ul {
-        left: 0;
-        opacity: 1;
-    }
-
-    .header-ul .menu-top {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .header-ul .menu-top input[type="text"] {
-        flex: 1;
-        padding: 10px 15px;
-        border-radius: 25px;
-        border: 1px solid #ccc;
-    }
-
-    .header-ul .menu-top .cart {
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-    }
-
-    .header-ul li {
-        display: block;
+	.checkbtn {
+	  display: block;
+	  position: relative;
+	  z-index: 2001;
 	}
+  
+	nav { position: relative; z-index: 1000; }
+  
+	/* Paneel: volle viewportbreedte, geen marges die overflow maken */
+	.header-ul {
+	  position: fixed;
+	  z-index: 2000;
+	  /* in plaats van width/margins: netjes “insetten” */
+	  /* top = 80px (onder je nav), links/rechts 1em spacing */
+	  inset: 80px 1em auto 1em;
+	  background: #F1F0EC;
+	  display: flex;
+	  flex-direction: column;
+	  padding: 20px;
+	  margin-top: 1em;
+	  box-sizing: border-box;
+	  border-radius: 1em;
+	  overflow-y: auto;
+  
+	  /* start: buiten beeld naar links, zonder layout te verschuiven */
+	  transform: translateX(-120%);
+	  opacity: 0;
+	  transition: transform 0.3s ease, opacity 0.3s ease;
+	}
+  
+	#check:checked ~ .header-ul {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+  
+	/* Zorg dat niets binnen het paneel breder wordt dan het paneel */
+	.header-ul, .header-ul * {
+	  max-width: 100%;
+	  overflow-wrap: anywhere;
+	  word-break: break-word;
+	}
+  
+	/* bovenste rij: search + cart met nette afstanden */
+	.header-ul .menu-top {
+	  display: flex;
+	  align-items: center;
+	  gap: 12px;               /* ruimte tussen input en cart */
+	  width: 100%;
+	  margin: 0 0 12px 0;
+	  padding: 0;
+	}
+  
+	.header-ul .menu-top input[type="text"] {
+	  flex: 0 0 200px;         /* compact, niet mee rekken */
+	  width: 200px;
+	  max-width: 70vw;
+	  padding: 10px 15px;
+	  border-radius: 25px;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	}
+  
+	.header-ul .menu-top .cart {
+	  margin-left: auto;       /* duw naar rechts */
+	  display: inline-flex;
+	  align-items: center;
+	  font-weight: bold;
+	  flex: 0 0 auto;
+	}
+  
+	/* LI-spacing en reset van desktop line-height */
+	.header-ul li {
+	  display: block;
+	  line-height: normal;     /* override desktop 80px */
+	  margin: 8px 0;           /* ruimte tussen items */
+	}
+  
+	/* optioneel: dunne separator tussen normale nav-items, niet op .menu-top */
+	.header-ul li:not(.menu-top) + li:not(.menu-top) {
+	  border-top: 1px solid rgba(0,0,0,.08);
+	  padding-top: 8px;
+	}
+  }
+  
+  /* Kill horizontale scroll overal als extra safety net */
+  html, body { overflow-x: hidden; }
+	
+	/* EINDE VAN HEADER STYLING */
 
-	/* STYLING VOOR BODY.MENU-OPEN // dit werkt nog niet*/
-	body.menu-open {
-		overflow: hidden; 
-		height: 100vh;    
-	  }
-	  
 
-}
-  /* EINDE VAN HEADER STYLING */
-
+  
 
    /* BEGIN STYLING SECTION 1 */
   
@@ -289,6 +322,8 @@ a:hover, a:active {
   }
   
   /* EINDE STYLING SECTION1 */
+
+  
   
 
   /* BEGIN STYLING VAN NORMALE SECTION */
@@ -922,4 +957,33 @@ section:nth-of-type(7) > div:first-of-type {
   /* EINDE STYLING SECTION7 */
 
 
-  /* BEGIN FOOTER STYLING */
+  /* BEGIN animatie hero STYLING waarbij tekst dus geanimeerd wordt en langzameraan verschijnt wanneer je de pagina laadt. */
+
+/* ===== Simpele hero animatie ===== */
+
+@keyframes fadeInUp {
+	from {
+	  opacity: 0;
+	  transform: translateY(30px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  section:nth-of-type(1) > p,
+  section:nth-of-type(1) > a {
+	opacity: 0; /* start onzichtbaar */
+	animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  /* laat de p iets eerder starten dan de knop */
+  section:nth-of-type(1) > p {
+	animation-delay: 0.3s;
+  }
+  
+  section:nth-of-type(1) > a {
+	animation-delay: 0.6s;
+  }
+  
