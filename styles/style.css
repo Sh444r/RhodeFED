@@ -481,13 +481,13 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
   /* BEGIN VISUALLY HIDDEN H2 STLYING */
   
   .h2-visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
 	position: absolute;
-	width: 1px; 
-	height: 1px; 
-	margin: -1px; 
-	padding: 0;
-	border: 0;
-	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	width: 1px;
   }
   
   /* EINDE VISUALLY HIDDEN H2 STYLING */
@@ -952,11 +952,10 @@ section:nth-of-type(7) > div:first-of-type {
   
   section:nth-of-type(1) > p,
   section:nth-of-type(1) > a {
-	opacity: 0; /* start onzichtbaar */
+	opacity: 0; 
 	animation: fadeInUp 1s ease-out forwards;
   }
   
-  /* laat de p iets eerder starten dan de knop */
   section:nth-of-type(1) > p {
 	animation-delay: 0.3s;
   }
@@ -967,11 +966,17 @@ section:nth-of-type(7) > div:first-of-type {
 
 /* EINDE STYLING */
   
+
 /* BEGIN STYLING SCROLL ANIMATIES */
 
-@keyframes fadeUp { from {opacity:.0; transform:translateY(24px)} to {opacity:1; transform:none} }
+@keyframes fadeUp { from {opacity:0; transform:translateY(24px)} to {opacity:1; transform:none} }
 @supports (animation-timeline: view()) {
-  section { animation: fadeUp .7s ease-out both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
+  section {
+    animation: fadeUp .7s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
 }
+
 
 /* EINDE STYLING SCROLL ANIMATIES */
