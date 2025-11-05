@@ -142,7 +142,7 @@ nav a {
 .checkbtn img {
 	margin-left: -7.75em;
 	margin-bottom: 0.5em;
-    max-width: 1em;
+  max-width: 1em;
 }
 
 #check {
@@ -173,7 +173,6 @@ a:hover, a:active {
   transition: 0.5s;
 }
 
-/* --- MOBILE HEADER FIXES --- */
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
@@ -183,24 +182,18 @@ a:hover, a:active {
 
   nav { position: relative; z-index: 1000; }
 
-  /* Paneel: volle viewportbreedte, geen marges die overflow maken */
   .header-ul {
     position: fixed;
-    z-index: 2000;
-    /* in plaats van width/margins: netjes “insetten” */
-    /* top = 80px (onder je nav), links/rechts 1em spacing */
+    /* zet menu boven andere elementen anders verdwijnt het achter main */
+    z-index: 2000; 
     inset: 80px 1em auto 1em;
     background: #F1F0EC;
     display: flex;
     flex-direction: column;
     padding: 20px;
     margin-top: 1em;
-    box-sizing: border-box;
     border-radius: 1em;
-    overflow-y: auto;
 
-    /* start: buiten beeld naar links, zonder layout te verschuiven */
-    transform: translateX(-120%);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
@@ -210,27 +203,20 @@ a:hover, a:active {
     opacity: 1;
   }
 
-  /* Zorg dat niets binnen het paneel breder wordt dan het paneel */
-  .header-ul, .header-ul * {
-    max-width: 100%;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-  }
+ 
 
-  /* bovenste rij: search + cart met nette afstanden */
   .header-ul .menu-top {
     display: flex;
     align-items: center;
-    gap: 12px;               /* ruimte tussen input en cart */
+    gap: 12px;               
     width: 100%;
     margin: 0 0 12px 0;
     padding: 0;
   }
 
+  /* styling zoekvakje in hamburger menu */
   .header-ul .menu-top input[type="text"] {
-    flex: 0 0 200px;         /* compact, niet mee rekken */
-    width: 200px;
-    max-width: 70vw;
+    width: 250px;
     padding: 10px 15px;
     border-radius: 25px;
     border: 1px solid #ccc;
@@ -238,31 +224,28 @@ a:hover, a:active {
   }
 
   .header-ul .menu-top .cart {
-    margin-left: auto;       /* duw naar rechts */
+    margin-left: auto;      
     display: inline-flex;
     align-items: center;
     font-weight: bold;
-    flex: 0 0 auto;
   }
 
-  /* LI-spacing en reset van desktop line-height */
   .header-ul li {
     display: block;
-    line-height: normal;     /* override desktop 80px */
-    margin: 8px 0;           /* ruimte tussen items */
+    line-height: normal;     
+    margin: 8px 0;           
   }
 
-  /* optioneel: dunne separator tussen normale nav-items, niet op .menu-top */
-  .header-ul li:not(.menu-top) + li:not(.menu-top) {
+  /* lijntjes tussen li */
+  .header-ul li + li:not(.menu-top) {
     border-top: 1px solid rgba(0,0,0,.08);
     padding-top: 8px;
   }
 }
 
-/* Kill horizontale scroll overal als extra safety net */
-html, body { overflow-x: hidden; }
   
 /* EINDE VAN HEADER STYLING */
+
 
  /* BEGIN STYLING VAN NORMALE SECTION */
   
@@ -295,6 +278,7 @@ html, body { overflow-x: hidden; }
   }
   
   section p {
+  text-align: center;
 	padding: 0px 15px 0px;
 	order: 3;
   }
@@ -320,19 +304,6 @@ html, body { overflow-x: hidden; }
   }
 
   /* EINDE SECTION STYLING */
-
-
-  /* BEGIN DIV STYLING 'our ongoing partners' */
-
-  div:nth-of-type(1) h2 {
-    align-items: center;
-    margin-left: 1.5em;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: sans-serif;
-  }
-
-    /* EINDE DIV STYLING 'our ongoing partners' */
 
 
  /* BEGIN STYLING SECTION 2 */
@@ -369,7 +340,7 @@ section:nth-of-type(2) ul::-webkit-scrollbar {
   display: none;
 }
 
-/* Elke li is een 'slide' */
+/* Elke li is een slide/vakje */
 section:nth-of-type(2) li {
   align-items: center;
   flex: 0 0 80%;
@@ -396,18 +367,17 @@ section:nth-of-type(2) li p {
 }
 
 section:nth-of-type(2) ul {
-  scroll-behavior: smooth;        /* <— zachte animatie bij pijltjes/anker-scrolls */
-  scroll-snap-type: x mandatory;  /* had je al, laat ik staan voor de volledigheid */
-  scroll-snap-stop: always;       /* <— stopt netjes op elke slide */
-  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;       
+  scroll-snap-type: x mandatory;  
+  scroll-snap-stop: always;       
 }
 
-/* Elke li blijft het snap-anker */
+/* Bij stoppen met scrollen stopt het in center van element*/
 section:nth-of-type(2) li {
   scroll-snap-align: center;
 }
 
-/* Pijltjes onderaan de carousel */
+/* Stlying pijltjes onderaan de carousel */
 section:nth-of-type(2) ul::scroll-button(*) {
   width: 2.5em;
   aspect-ratio: 1;
@@ -447,6 +417,7 @@ section:nth-of-type(2) ul::scroll-button(*):disabled {
 
 /* EINDE STYLING SECTION 2 */
 
+
  /* BEGIN STYLING VAN SECTION3 */
   
  section:nth-of-type(3) {
@@ -464,33 +435,33 @@ section:nth-of-type(2) ul::scroll-button(*):disabled {
   
   section:nth-of-type(3) h2 {
     font-family: sans-serif;
-	font-size: 1.5em;
-	font-weight: bold;
+	  font-size: 1.5em;
+	  font-weight: bold;
     margin-top: 2em;
-	margin-bottom: 0px;
+	  margin-bottom: 0px;
     text-align: center;
-	order: 1;
+	  order: 1;
   }
   
   section:nth-of-type(3) p {
-	padding: 0px 15px 0px;
+	  padding: 0px 15px 0px;
     text-align: center;
     line-height: 1.5em;
     font-weight: 400;
-	order: 2;
+	  order: 2;
   }
 
   section:nth-of-type(3) a {
     display: inline-block;
-	align-items: start;
-	text-align: center;
-	margin-top: 0px;
-	margin-bottom: 3em;
+    align-items: start;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 3em;
     margin-left: 5em;
     margin-right: 5em;
-	padding: 5px;
-	color: #595752;
-	order: 3;
+    padding: 5px;
+    color: #595752;
+    order: 3;
   }
   
   section:nth-of-type(3) :hover {
@@ -500,10 +471,23 @@ section:nth-of-type(2) ul::scroll-button(*):disabled {
 /* EINDE SECTION3 STYLING */
 
 
+/* BEGIN DIV STYLING 'our ongoing partners' */
+
+div:nth-of-type(1) h2 {
+  align-items: center;
+  margin-left: 1.5em;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+  /* EINDE DIV STYLING 'our ongoing partners' */
+
+
 
  /* BEGIN STYLING VAN SECTION5 */
   
- section:nth-of-type(5) {
+section:nth-of-type(5) {
 	display: flex;
 	flex-direction: column;
 	margin-top: 30px;
@@ -513,42 +497,37 @@ section:nth-of-type(2) ul::scroll-button(*):disabled {
 	border-radius: 1em;
 	padding-bottom: 0px;
 	background-color: #F1F0EC;
-
-  }
+}
   
-  section:nth-of-type(5) h2 {
-    font-family: sans-serif;
-	font-size: 1.5em;
-	font-weight: bold;
-	/* padding: 0px 15px; */
-    margin-top: 3em;
-	margin-bottom: 0px;
-    text-align: center;
-	order: 1;
-  }
+section:nth-of-type(5) h2 {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 0px;
+  text-align: center;
+  order: 1;
+}
   
-  section:nth-of-type(5) p {
+section:nth-of-type(5) p {
 	padding: 0px 15px 0px;
-    text-align: center;
-    line-height: 1.5em;
-    font-weight: 400;
+  text-align: center;
+  line-height: 1.5em;
+  font-weight: 400;
 	order: 2;
-  }
+}
 
   section:nth-of-type(5) a {
     display: inline-block;
-    /* text-decoration: none; */
-	align-items: start;
-	text-align: center;
-	/* border: .25px solid black;
-	border-radius: 20px; */
-	margin-top: 0px;
-	margin-bottom: 3em;
+    align-items: start;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 3em;
     margin-left: 5em;
     margin-right: 5em;
-	padding: 5px;
-	color: #595752;
-	order: 3;
+    padding: 5px;
+    color: #595752;
+    order: 3;
   }
   
   section:nth-of-type(5) :hover {
@@ -561,51 +540,47 @@ section:nth-of-type(2) ul::scroll-button(*):disabled {
  /* BEGIN STYLING VAN SECTION7 */
   
  section:nth-of-type(7) {
-	display: flex;
-	flex-direction: column;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	margin-left: 10px;
-	margin-right: 10px;
-	border-radius: 1em;
-	padding-bottom: 0px;
-	background-color: #F1F0EC;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 1em;
+    padding-bottom: 0px;
+    background-color: #F1F0EC;
 
   }
   
   section:nth-of-type(7) h2 {
     font-family: sans-serif;
-	font-size: 1.5em;
-	font-weight: bold;
-	/* padding: 0px 15px; */
+    font-size: 1.5em;
+    font-weight: bold;
     margin-top: 2em;
-	margin-bottom: 0px;
+    margin-bottom: 0px;
     text-align: center;
-	order: 1;
+    order: 1;
   }
   
   section:nth-of-type(7) p {
-	padding: 0px 15px 0px;
+    padding: 0px 15px 0px;
     text-align: center;
     line-height: 1.5em;
     font-weight: 400;
-	order: 2;
+    order: 2;
   }
 
   section:nth-of-type(7) a {
     display: inline-block;
-    /* text-decoration: none; */
-	align-items: start;
-	text-align: center;
-	/* border: .25px solid black;
-	border-radius: 20px; */
-	margin-top: 0px;
-	margin-bottom: 3em;
+    align-items: start;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 3em;
     margin-left: 5em;
     margin-right: 5em;
-	padding: 5px;
-	color: #595752;
-	order: 3;
+    padding: 5px;
+    color: #595752;
+    order: 3;
   }
   
   section:nth-of-type(7) :hover {
@@ -632,13 +607,12 @@ section:nth-of-type(2) ul::scroll-button(*):disabled {
   
   section:nth-of-type(9) h2 {
     font-family: sans-serif;
-	font-size: 1em;
-	font-weight: bold;
-	/* padding: 0px 15px; */
+    font-size: 1em;
+    font-weight: bold;
     margin-top: 3em;
-	margin-bottom: 0px;
+	  margin-bottom: 0px;
     text-align: center;
-	order: 1;
+    order: 1;
   }
   
   section:nth-of-type(9) p {
@@ -648,50 +622,47 @@ section:nth-of-type(2) ul::scroll-button(*):disabled {
 
   section:nth-of-type(9) a {
     display: inline-block;
-    /* text-decoration: none; */
-	align-items: start;
-	text-align: center;
-	/* border: .25px solid black;
-	border-radius: 20px; */
-	margin-top: 0px;
-	margin-bottom: 2em;
+    align-items: start;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 2em;
     margin-left: 5em;
     margin-right: 5em;
-	padding: 5px;
-	color: #595752;
-	order: 3;
+    padding: 5px;
+    color: #595752;
+    order: 3;
   }
   
   section:nth-of-type(9) :hover {
 	background-color: white;
   }
 
-  /* EINDE SECTION STYLING */
+  /* EINDE SECTION9 STYLING */
 
-  /* BEGIN DIV STYLING 'our work in 2025' */
 
-     div:nth-of-type(2) h2 {
-      align-items: center;
-      margin-left: 2.75em;
-      font-size: 30px;
-      font-weight: 600;
-      font-family: sans-serif;
-    }
+/* BEGIN DIV STYLING 'our work in 2025' */
+
+  div:nth-of-type(2) h2 {
+    align-items: center;
+    margin-left: 2.75em;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
   
-   /* EINDE DIV STYLING 'our work in 2025' */
+ /* EINDE DIV STYLING 'our work in 2025' */
 
    
 /*BEGIN STYLING SECTION 10 / Formulier */
 
 section:nth-of-type(10) {
   display: flex;
-  flex-direction: column; /* verander van column-reverse naar column */
+  flex-direction: column; 
   background-color: #F1F0EC;
   padding: 2em 1.5em;
   border-radius: 1em;
   text-align: left;
   max-width: 600px;
-  /* margin: 2em auto; */
   margin-bottom: 3em;
 }
 
@@ -720,9 +691,9 @@ section:nth-of-type(10) form {
 }
 
 section:nth-of-type(10) label {
-  font-family: "rhodefont";   /* zelfde font als je p-elementen */
-  font-weight: normal;        /* niet te dik, gelijk aan bodytekst */
-  font-size: 1.5em;             /* zelfde grootte als p */
+  font-family: "rhodefont";   
+  font-weight: normal;       
+  font-size: 1.5em;             
   color: #595752;
   margin-bottom: 0.1em;
 }
@@ -769,4 +740,14 @@ section:nth-of-type(10) h2 { order: 0; }
 section:nth-of-type(10) p  { order: 1; }
 section:nth-of-type(10) form { order: 2; } 
 /* EINDE STYLING SECTION 10 / Formulier */
+
+
+/* BEGIN STYLING SCROLL ANIMATIES */
+
+@keyframes fadeUp { from {opacity:.0; transform:translateY(24px)} to {opacity:1; transform:none} }
+@supports (animation-timeline: view()) {
+  section { animation: fadeUp .7s ease-out both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
+}
+
+/* EINDE STYLING SCROLL ANIMATIES */
 

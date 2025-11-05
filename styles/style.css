@@ -97,83 +97,83 @@
 
 
 
-  /* WAAR HEADER STYLING BEGINT */
+/* WAAR HEADER STYLING BEGINT */
+  
   
 nav {
-    position: relative;
-    background: #F1F0EC;
-    height: 80px;
-    max-width: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    border-radius: 1em;
-    padding: 0 20px;
-}
-
-
-nav h1 {
-    font-size: 3em;
-    margin: 0;
-    font-family: "rhodefont";
-    font-weight: bold;
-    color: #595752;
-    z-index: 1;
-}
-
-nav a {
-    text-decoration: none;
-    border-bottom: none;
-}
-
-
-/* HAMBURGER MENU LOGO LINKS UITGELIJND */
-.checkbtn {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
-
-.checkbtn img {
-	margin-left: -7.75em;
-	margin-bottom: 0.5em;
-    max-width: 1em;
-}
-
-#check {
-    display: none;
-}
-
-/* DESKTOP MENU // DIT LATER VERANDEREN EN EVT WEGHALEN*/
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-    line-height: 80px;
-}
-
-nav ul li a {
-    color: #A6A6A6;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    background: white;
-    transition: 0.5s;
-}
-
-/* --- MOBILE HEADER FIXES --- */
-@media (max-width: 858px) {
+	position: relative;
+	background: #F1F0EC;
+	height: 80px;
+	max-width: 100%;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	border-radius: 1em;
+	padding: 0 20px;
+  }
+  
+  
+  nav h1 {
+	font-size: 3em;
+	margin: 0;
+	font-family: "rhodefont";
+	font-weight: bold;
+	color: #595752;
+	z-index: 1;
+  }
+  
+  nav a {
+	text-decoration: none;
+	border-bottom: none;
+  }
+  
+  
+  /* HAMBURGER MENU LOGO LINKS UITGELIJND */
+  .checkbtn {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+  }
+  
+  .checkbtn img {
+	  margin-left: -7.75em;
+	  margin-bottom: 0.5em;
+	max-width: 1em;
+  }
+  
+  #check {
+	display: none;
+  }
+  
+  /* DESKTOP MENU // DIT LATER VERANDEREN EN EVT WEGHALEN*/
+  nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav ul li {
+	margin-left: 20px;
+	line-height: 80px;
+  }
+  
+  nav ul li a {
+	color: #A6A6A6;
+	font-size: 16px;
+	text-decoration: none;
+  }
+  
+  a:hover, a:active {
+	background: white;
+	transition: 0.5s;
+  }
+  
+  @media (max-width: 858px) {
 	.checkbtn {
 	  display: block;
 	  position: relative;
@@ -182,24 +182,18 @@ a:hover, a:active {
   
 	nav { position: relative; z-index: 1000; }
   
-	/* Paneel: volle viewportbreedte, geen marges die overflow maken */
 	.header-ul {
 	  position: fixed;
-	  z-index: 2000;
-	  /* in plaats van width/margins: netjes “insetten” */
-	  /* top = 80px (onder je nav), links/rechts 1em spacing */
+	  /* zet menu boven andere elementen anders verdwijnt het achter main */
+	  z-index: 2000; 
 	  inset: 80px 1em auto 1em;
 	  background: #F1F0EC;
 	  display: flex;
 	  flex-direction: column;
 	  padding: 20px;
 	  margin-top: 1em;
-	  box-sizing: border-box;
 	  border-radius: 1em;
-	  overflow-y: auto;
   
-	  /* start: buiten beeld naar links, zonder layout te verschuiven */
-	  transform: translateX(-120%);
 	  opacity: 0;
 	  transition: transform 0.3s ease, opacity 0.3s ease;
 	}
@@ -209,27 +203,20 @@ a:hover, a:active {
 	  opacity: 1;
 	}
   
-	/* Zorg dat niets binnen het paneel breder wordt dan het paneel */
-	.header-ul, .header-ul * {
-	  max-width: 100%;
-	  overflow-wrap: anywhere;
-	  word-break: break-word;
-	}
+   
   
-	/* bovenste rij: search + cart met nette afstanden */
 	.header-ul .menu-top {
 	  display: flex;
 	  align-items: center;
-	  gap: 12px;               /* ruimte tussen input en cart */
+	  gap: 12px;               
 	  width: 100%;
 	  margin: 0 0 12px 0;
 	  padding: 0;
 	}
   
+	/* styling zoekvakje in hamburger menu */
 	.header-ul .menu-top input[type="text"] {
-	  flex: 0 0 200px;         /* compact, niet mee rekken */
-	  width: 200px;
-	  max-width: 70vw;
+	  width: 250px;
 	  padding: 10px 15px;
 	  border-radius: 25px;
 	  border: 1px solid #ccc;
@@ -237,33 +224,27 @@ a:hover, a:active {
 	}
   
 	.header-ul .menu-top .cart {
-	  margin-left: auto;       /* duw naar rechts */
+	  margin-left: auto;      
 	  display: inline-flex;
 	  align-items: center;
 	  font-weight: bold;
-	  flex: 0 0 auto;
 	}
   
-	/* LI-spacing en reset van desktop line-height */
 	.header-ul li {
 	  display: block;
-	  line-height: normal;     /* override desktop 80px */
-	  margin: 8px 0;           /* ruimte tussen items */
+	  line-height: normal;     
+	  margin: 8px 0;           
 	}
   
-	/* optioneel: dunne separator tussen normale nav-items, niet op .menu-top */
-	.header-ul li:not(.menu-top) + li:not(.menu-top) {
+	/* lijntjes tussen li */
+	.header-ul li + li:not(.menu-top) {
 	  border-top: 1px solid rgba(0,0,0,.08);
 	  padding-top: 8px;
 	}
   }
-  
-  /* Kill horizontale scroll overal als extra safety net */
-  html, body { overflow-x: hidden; }
 	
-	/* EINDE VAN HEADER STYLING */
-
-
+  /* EINDE VAN HEADER STYLING */
+  
   
 
    /* BEGIN STYLING SECTION 1 */
@@ -520,7 +501,7 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
 	background-position: center;
 	background-repeat: no-repeat;
 	color: #595752; 
-	padding: 0px px;
+	padding: 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch; 
@@ -559,7 +540,7 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
 	border-color: white;
 	align-items: center;
 	display: inline-block;
-	transition: background-color white 0.3s ease;
+	transition: background-color #fff 0.3s ease;
 	max-width: 100%;
 	margin: 20px auto 0;
   }
@@ -687,7 +668,6 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
 /* BEGIN STYLING SECTION 5 */
 
 section:nth-of-type(5) {
-	background-image: url;
 	display: flex;
 	flex-direction: column;
 	margin-top: 30px;
@@ -959,8 +939,6 @@ section:nth-of-type(7) > div:first-of-type {
 
   /* BEGIN animatie hero STYLING waarbij tekst dus geanimeerd wordt en langzameraan verschijnt wanneer je de pagina laadt. */
 
-/* ===== Simpele hero animatie ===== */
-
 @keyframes fadeInUp {
 	from {
 	  opacity: 0;
@@ -986,4 +964,14 @@ section:nth-of-type(7) > div:first-of-type {
   section:nth-of-type(1) > a {
 	animation-delay: 0.6s;
   }
+
+/* EINDE STYLING */
   
+/* BEGIN STYLING SCROLL ANIMATIES */
+
+@keyframes fadeUp { from {opacity:.0; transform:translateY(24px)} to {opacity:1; transform:none} }
+@supports (animation-timeline: view()) {
+  section { animation: fadeUp .7s ease-out both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
+}
+
+/* EINDE STYLING SCROLL ANIMATIES */
