@@ -172,6 +172,44 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+
+### Navigatie en toetsenbord
+- De navigatie heeft een logische volgorde bij gebruik van het toetsenbord.  
+- Interactieve elementen zijn goed aanklikbaar en hebben voldoende tussenruimte.  
+- Er is geen skip link aanwezig.  
+
+### Weergave en oriëntatie
+- De website werkt goed bij verschillende schermrotaties.  
+- Zoom is niet uitgeschakeld en blijft bruikbaar bij vergroting.  
+
+### Afbeeldingen
+- Alle afbeeldingen bevatten alt teksten.  
+- Decoratieve afbeeldingen gebruiken een neutrale of lege alt waarde.  
+- Er zijn geen complexe of tekstafbeeldingen zonder beschrijving.  
+
+### Media
+- Er is geen autoplay media aanwezig.  
+- Er zijn geen video’s of audiofragmenten met ondertiteling of transcript (niet van toepassing).  
+
+### Links en knoppen
+- Links zijn correct opgebouwd met het `<a>`element.  
+- Knoppen gebruiken het juiste `<button>`element.  
+- Links zijn duidelijk herkenbaar en openen geen onverwachte nieuwe tabbladen.  
+
+### Kleuren en contrast
+- Grote koppen hebben voldoende contrast.  
+- Er is geen aangepaste tekstselectiekleur aanwezig.  
+- Er is geen ondersteuning voor dark mode of high contrast mode.  
+
+### Animaties en beweging
+- De animaties zijn rustig en niet flitsend.  
+
+### Formulieren en content
+- Formuliervelden en labels zijn correct gekoppeld.  
+- Tekst kan tot 200% worden vergroot zonder dat de layout breekt.  
+- Kleur is niet het enige middel waarmee informatie wordt overgebracht. 
+
+
 </details>
 
 
