@@ -100,8 +100,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  <img src="(readme-images/Week-1-voortgangs.png)" width="375px" alt="Moeilijkheden">
-  <img src="(readme-images/Week-1-voortgangs2.png)" width="375px" alt="Moeilijkheden">
+  <img src="./readme-images/Week-1-voortgangs.png" width="375px" alt="Moeilijkheden">
+  <img src="./readme-images/Week-1-voortgangs2.png" width="375px" alt="Moeilijkheden">
 
   Bovenstaand zijn screenshots zichtbaar van de moeilijkheden die ik ervaarde bij het beginnen van het maken van de site. Ik had voornamelijk moeite met het maken van de hamburger menu. Bij de originele RHODE site, ziet de hamburger menu er heel ingewikkeld uit. Ik vroeg aan de docent en studie assistenten of ik het precies zo moest namaken maar ze zeiden dat het niet precies zoals de originele hoeft te zijn. Ook verscheen de hamburgermenu achter de <main> in plaats van dat het boven op <main> moest verschijnen
 
@@ -136,8 +136,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  <img src="(readme-images/Week-1-voortgangs3.png)" width="375px" alt="Moeilijkheden">
-  <img src="(readme-images/Week-2-voortgangs.png)" width="375px" alt="Moeilijkheden">
+  <img src="./readme-images/Week-1-voortgangs3.png" width="375px" alt="Moeilijkheden">
+  <img src="./readme-images/Week-2-voortgangs.png" width="375px" alt="Moeilijkheden">
 
   Ik had voornamelijk wat moeite met het maken van de carousels in mijn site. In mijn gekozen site zitten vooral wel wat carousels. Dit was dus vooral belangrijk om goed te maken. 
   Wat wel goed ging aan het maken van mijn site was de opzet. In principe is de homepagina, naast de carousels, niet moeilijk om te maken en het zelfde geldt voor de 2e pagina. Daar aan moest wel gewerkt worden maar mijn focus zat vooral op de eerste pagina, omdat ik de carousels wel goed wou maken en ook het hamburger menu.
@@ -184,7 +184,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  <img src="(readme-images/Week-3-voortgangs.png)" width="375px" alt="Moeilijkheden">
+  <img src="./readme-images/Week-3-voortgangs.png" width="375px" alt="Moeilijkheden">
   Er moest wel nog wat gewerkt worden aan de carousels in mijn site. Daarnaast had ik ook wat moeilijkheden met bovenstaande screenshot. Bij dit stukje section, moet <p> veranderen als je erop klikt/hovert. Hier had ik dus ook vragen over voor bij de voortgangsgesprek.
   Naast dit, ging het wel goed met het maken van de site alleen had ik wel nog wat tijdstress, omdat ik voornamelijk bezig was met het maken van de carousel en mij niet kon focussen op bijv. het bijwerken van de readme, het opnieuw doen van de toegankelijksheidstest etc.
 
@@ -251,6 +251,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.26.png>)" width="375px" alt="Uitkomst">
   <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.30.png>)" width="375px" alt="Uitkomst">
   <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.32.png>)" width="375px" alt="Uitkomst">
+    <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.32.png>)" width="375px" alt="Uitkomst">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
