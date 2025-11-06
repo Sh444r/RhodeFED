@@ -245,7 +245,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./readme-images/home-5.png" width="375px" alt="Uitkomst">
   <img src="./readme-images/home-6.png" width="375px" alt="Uitkomst">
   <img src="./readme-images/futures-img-uitkomst/futures-1.png" width="375px" alt="Uitkomst">
-  <img src="./readme-images/futures-img-uitkomst/futures-2.png)" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-2.png" width="375px" alt="Uitkomst">
   <img src="./readme-images/futures-img-uitkomst/futures-3.png" width="375px" alt="Uitkomst">
   <img src="./readme-images/futures-img-uitkomst/futures-4.png" width="375px" alt="Uitkomst">
   <img src="./readme-images/futures-img-uitkomst/futures-5.png" width="375px" alt="Uitkomst">
@@ -253,7 +253,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./readme-images/futures-img-uitkomst/futures-7.png" width="375px" alt="Uitkomst">
   <img src="./readme-images/futures-img-uitkomst/futures-8.png" width="375px" alt="Uitkomst">
   <img src="./readme-images/futures-img-uitkomst/futures-9.png" width="375px" alt="Uitkomst">
-  <img src="./readme-images/futures-img-uitkomst/futures-10.png)" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-10.png" width="375px" alt="Uitkomst">
 
 
 
