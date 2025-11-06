@@ -304,8 +304,6 @@ nav {
   
   /* EINDE STYLING SECTION1 */
 
-  
-  
 
   /* BEGIN STYLING VAN NORMALE SECTION */
   
@@ -357,7 +355,7 @@ nav {
 	background-color: white;
   }
   
-/* BEGIN STYLING VAN CAROUSEL1 */
+/* BEGIN STYLING VAN CAROUSEL1/SECTION2 */
 
 section:nth-of-type(2) {
     max-width: 100%;
@@ -493,7 +491,7 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
   /* EINDE VISUALLY HIDDEN H2 STYLING */
 
 
-  /* BEGIN img1-background-container STYLING  */
+  /* BEGIN SECTION3 STYLING  */
   
 	section:nth-of-type(3) {
 	background-image: url('../images/one-of-everything-really-good-img.jpg');
@@ -514,7 +512,6 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
 	order: 1;
 	font-size: 32px;
 	color: white;
-	/* margin-bottom: 20px; */
 	margin: 0px;
 	margin-bottom: 0px;
 	font-weight: bold;
@@ -619,7 +616,6 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
 	section:nth-of-type(4) > ul > li p {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	/* margin-left: 15px; */
 	}
 
 	section:nth-of-type(4) > ul > li a {
@@ -662,7 +658,7 @@ section:nth-of-type(2) > div:nth-of-type(2) > button.active {
 	background-color: #e0e0e0;
 	}
 
-/* EINDE STYLING SECITON 4 */
+/* EINDE STYLING SECTION 4 */
 
 
 /* BEGIN STYLING SECTION 5 */
@@ -977,6 +973,5 @@ section:nth-of-type(7) > div:first-of-type {
     animation-range: entry 0% cover 30%;
   }
 }
-
 
 /* EINDE STYLING SCROLL ANIMATIES */

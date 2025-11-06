@@ -180,7 +180,10 @@ a:hover, a:active {
     z-index: 2001;
   }
 
-  nav { position: relative; z-index: 1000; }
+  nav { 
+    position: relative;
+     z-index: 1000; 
+    }
 
   .header-ul {
     position: fixed;
@@ -193,7 +196,6 @@ a:hover, a:active {
     padding: 20px;
     margin-top: 1em;
     border-radius: 1em;
-
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
