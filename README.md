@@ -103,7 +103,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./readme-images/Week-1-voortgangs.png" width="375px" alt="Moeilijkheden">
   <img src="./readme-images/Week-1-voortgangs2.png" width="375px" alt="Moeilijkheden">
 
-  Bovenstaand zijn screenshots zichtbaar van de moeilijkheden die ik ervaarde bij het beginnen van het maken van de site. Ik had voornamelijk moeite met het maken van de hamburger menu. Bij de originele RHODE site, ziet de hamburger menu er heel ingewikkeld uit. Ik vroeg aan de docent en studie assistenten of ik het precies zo moest namaken maar ze zeiden dat het niet precies zoals de originele hoeft te zijn. Ook verscheen de hamburgermenu achter de <main> in plaats van dat het boven op <main> moest verschijnen
+  Bovenstaand zijn screenshots zichtbaar van de moeilijkheden die ik ervaarde bij het beginnen van het maken van de site. Ik had voornamelijk moeite met het maken van de hamburger menu. Bij de originele RHODE site, ziet de hamburger menu er heel ingewikkeld uit. Ik vroeg aan de docent en studie assistenten of ik het precies zo moest namaken maar ze zeiden dat het niet precies zoals de originele hoeft te zijn. Ook verscheen de hamburgermenu achter de main in plaats van dat het boven op main moest verschijnen
 
 
   ### Agenda voor meeting
@@ -118,11 +118,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   - Beginnen met de volledige HTML en daarna de rest stap voor stap toevoegen.
   - Breakdown aanpassen
-  - Knoppen die naar andere pagina’s leiden → <a> met button-styling.
-  - Lange zinnen liever als <p> in plaats van <h2>.
+  - Knoppen die naar andere pagina’s leiden → a met button styling.
+  - Lange zinnen liever als p in plaats van h2.
   - Check of bepaalde elementen echt iets doen (interactie).
   - Positieve feedback: al goed op weg, HTML-uitwerking duidelijk.
-  - 
+  
 
 </details>
 
@@ -146,9 +146,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1              | student 2          | student 3               | student 4        |
-  | ---                    | ---                | ---                     | ---              |
-  | Hoe maak ik een carousel? | Background img | Site responsive maken | en dan ik dat    |
+  | student 1                 | student 2          | student 3               | student 4        |
+  | ---                       | ---                | ---                     | ---              |
+  | Hoe maak ik een carousel? | Background img     | Site responsive maken   |-                 |
 
 
 
@@ -185,17 +185,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   <img src="./readme-images/Week-3-voortgangs.png" width="375px" alt="Moeilijkheden">
-  Er moest wel nog wat gewerkt worden aan de carousels in mijn site. Daarnaast had ik ook wat moeilijkheden met bovenstaande screenshot. Bij dit stukje section, moet <p> veranderen als je erop klikt/hovert. Hier had ik dus ook vragen over voor bij de voortgangsgesprek.
+
+
+  Er moest wel nog wat gewerkt worden aan de carousels in mijn site. Daarnaast had ik ook wat moeilijkheden met bovenstaande screenshot. Bij dit stukje section, moet p veranderen als je erop klikt/hovert. Hier had ik dus ook vragen over voor bij de voortgangsgesprek.
   Naast dit, ging het wel goed met het maken van de site alleen had ik wel nog wat tijdstress, omdat ik voornamelijk bezig was met het maken van de carousel en mij niet kon focussen op bijv. het bijwerken van de readme, het opnieuw doen van de toegankelijksheidstest etc.
 
 
   ### Agenda voor meeting
   Mijn groepje en ik hadden niet bepaald veel vragen voor de laatste meeting. We vroegen wel om feedback en kregen die ook. 
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | Hoe verander ik <p> wanneer ik erop klik/hover?            | ---                | ---          | ---              |
-  | -              | -                  | -            | -                |
- 
+  | student 1                                       | student 2          | student 3    | student 4        |
+  | Hoe verander ik <p> wanneer ik erop klik/hover?            
+  | ---                                             | ---                |        ---   |                  |
+  | -                                               | -                  | -            | -                |
+  
 
 
   ### Verslag van meeting
@@ -235,45 +238,51 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.02.20.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.02.24.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.02.28.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.02.32.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.03.15.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.03.18.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.02.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.07.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.09.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.13.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.16.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.19.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.24.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.26.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.30.png>)" width="375px" alt="Uitkomst">
-  <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.32.png>)" width="375px" alt="Uitkomst">
-    <img src="![Alt text](<readme-images/futures-img-uitkomst/Screenshot 2025-11-05 at 16.14.32.png>)" width="375px" alt="Uitkomst">
+  <img src="./readme-images/home-1.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/home-2.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/home-3.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/home-4.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/home-5.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/home-6.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-1.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-2.png)" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-3.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-4.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-5.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-6.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-7.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-8.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-9.png" width="375px" alt="Uitkomst">
+  <img src="./readme-images/futures-img-uitkomst/futures-10.png)" width="375px" alt="Uitkomst">
+
 
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.02.24.png>)" width="375px" alt="top">
+  <img src="./readme-images/home-2.png" width="375px" alt="Uitkomst">
+    <img src="./readme-images/home-5.png" width="375px" alt="Uitkomst">
+
+
   Ik heb vooral geleerd hoe ik carousels moet maken met en zonder javascript. Carousels maken met javascript was vooral even oefenen en uitvogelen hoe het werkt, maar uiteindelijk is het wel gelukt. Daarnaast had ik ook een codepen gekregen van een docent waarbij ik een carousel kon maken zonder javascript. Dit was vooral leerzaam en eigenlijk het moeilijkste aan mijn website.
 
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.03.18.png>)" width="375px" alt="top">
+  <img src="./readme-images/home-6.png" width="375px" alt="Uitkomst">
+  
   Ik heb kunnen leren hoe ik bepaalde content kan laten veranderen wanneer ik bijv. over iets hover of op iets klik. Dit heb ik kunnen leren door een gekregen codepen bron van een student assistent (Mathijs).
 
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
 
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.17.50.png>)" width="375px" alt="bummer">
-  Ik had vooral moeilijkheden met het maken van het hamburger menu. Op de foto zelf ziet het er heel simpel uit, maar dat is het dus niet. Ik moest het wel een aantal keer aanpassen tijdens het maken van de site. Vooral ook omdat de originele hamburgermenu er veel anders uitziet op de originele site, maar die is veels te ingewikkeld voor mij. Daar moet ik dus nog veel van leren. 
+  <img src="./readme-images/hamburger-final.png" width="375px" alt="bummer">
 
-  <img src="![Alt text](<readme-images/Screenshot 2025-11-05 at 16.02.24.png>)" width="375px" alt="bummer">
-Het maken van de carousels gingen ook niet al te best. Ik heb er veel tijd aan besteedt (samen met het maken van het hamburger menu). Dit stukje was dus best lastig maar uiteindelijk heb ik het wel kunnen maken.
+  Ik had vooral moeilijkheden met het maken van het hamburger menu. Op de foto zelf ziet het er heel simpel uit, maar dat is het dus niet. Ik moest het wel een aantal keer aanpassen tijdens het maken van de site. Vooral ook omdat de originele hamburgermenu er veel anders uitziet op de originele site, maar die is veels te ingewikkeld voor mij. Daar moet ik dus nog veel van leren.
+
+  <img src="./readme-images/Week-1-voortgangs2.png" width="375px" alt="Moeilijkheden">
+  <img src="./readme-images/home-2.png" width="375px" alt="Uitkomst">
+
+  Het maken van de carousels gingen ook niet al te best. Ik heb er veel tijd aan besteedt (samen met het maken van het hamburger menu). Dit stukje was dus best lastig maar uiteindelijk heb ik het wel kunnen maken.
 
 
 </details>
